@@ -1,0 +1,39 @@
+/* ===================================================================
+   PVC-CEILING.CSS - PVC Ceiling Page Only Styles
+   Shree Ashapura Fiber And Interior Furniture
+   Page: pvc-ceiling.html
+
+   Edit this file to change ONLY the PVC Ceiling page appearance.
+   Cards Grid, Filter Tabs and Lightbox are already in base.css.
+   =================================================================== */
+
+/* -------------------------------------------------------------------
+   Ceiling card image height - can be taller for ceiling shots
+   ------------------------------------------------------------------- */
+.ceiling-card .card-img-wrap {
+  height: 250px;
+}
+
+/* -------------------------------------------------------------------
+   Ceiling hero overlay effect (warm tone accent)
+   ------------------------------------------------------------------- */
+.ceiling-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(245, 166, 35, 0.05) 0%,
+    transparent 60%
+  );
+  pointer-events: none;
+  border-radius: var(--radius-lg);
+}
+
+/* -------------------------------------------------------------------
+   Responsive (Ceiling Page)
+   ------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  .feature-badges-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

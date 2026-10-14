@@ -1,0 +1,36 @@
+/* ===================================================================
+   PVC-KITCHEN.CSS - PVC Kitchen Page Only Styles
+   Shree Ashapura Fiber And Interior Furniture
+   Page: pvc-kitchen.html
+
+   Edit this file to change ONLY the PVC Kitchen page appearance.
+   Cards Grid, Filter Tabs and Lightbox are already in base.css.
+   =================================================================== */
+
+/* -------------------------------------------------------------------
+   Kitchen Hero — 4 Column Feature Badges layout
+   ------------------------------------------------------------------- */
+.kitchen-hero-section {
+  background: linear-gradient(180deg, rgba(11, 13, 17, 0) 0%, rgba(11, 13, 17, 0.6) 100%);
+}
+
+/* Kitchen card image height tweak (can override base if needed) */
+.kitchen-card .card-img-wrap {
+  height: 240px;
+}
+
+/* -------------------------------------------------------------------
+   Kitchen Services Background Stripe
+   ------------------------------------------------------------------- */
+.kitchen-services-bg {
+  background-color: #0d0f15;
+}
+
+/* -------------------------------------------------------------------
+   Responsive (Kitchen Page)
+   ------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  .feature-badges-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

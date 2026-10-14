@@ -1,0 +1,344 @@
+/* ===================================================================
+   CONTACT.CSS - Contact Page Only Styles
+   Shree Ashapura Fiber And Interior Furniture
+   Page: contact.html
+
+   Edit this file to change ONLY the Contact page appearance.
+   =================================================================== */
+
+/* -------------------------------------------------------------------
+   Contact Hero — 4-column quick info badges
+   ------------------------------------------------------------------- */
+.contact-hero-info {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 28px;
+}
+
+.contact-quick-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+}
+
+.contact-quick-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: rgba(255, 77, 79, 0.12);
+  border: 1px solid rgba(255, 77, 79, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--coral-primary);
+  flex-shrink: 0;
+}
+
+.contact-quick-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-quick-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-white);
+}
+
+.contact-quick-sub {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+}
+
+/* -------------------------------------------------------------------
+   Contact Info + Map — 2 columns
+   ------------------------------------------------------------------- */
+.contact-grid-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+  margin-top: 36px;
+}
+
+.contact-cards-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Individual info card (phone, address, hours) */
+.contact-info-card {
+  background-color: var(--bg-card);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-card);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.info-card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.info-round-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: var(--coral-primary);
+  color: var(--text-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 15px var(--coral-glow);
+}
+
+.info-card-text {
+  flex-grow: 1;
+}
+
+.info-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+
+.info-value-big {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-white);
+  line-height: 1.4;
+}
+
+.info-actions-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+/* -------------------------------------------------------------------
+   Google Maps Card
+   ------------------------------------------------------------------- */
+.map-container-box {
+  background-color: var(--bg-card);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-card);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.map-header-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-white);
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  letter-spacing: 0.05em;
+}
+
+.map-embed-wrapper {
+  width: 100%;
+  height: 380px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 1px solid var(--border-card);
+  background-color: #1a1e28;
+}
+
+.map-embed-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* -------------------------------------------------------------------
+   Enquire Now Form
+   ------------------------------------------------------------------- */
+.enquiry-section-box {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-lg);
+  padding: 44px;
+  margin-top: 48px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 28px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.form-input-wrap svg {
+  position: absolute;
+  left: 18px;
+  color: var(--text-secondary);
+  pointer-events: none;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-card);
+  color: var(--text-white);
+  padding: 14px 18px 14px 48px;
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  transition: var(--transition-fast);
+}
+
+.form-textarea {
+  padding-left: 48px;
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--coral-primary);
+  background-color: #1a1e2a;
+  box-shadow: 0 0 15px rgba(255, 77, 79, 0.2);
+}
+
+.form-submit-row {
+  grid-column: 1 / -1;
+  margin-top: 10px;
+}
+
+.btn-form-submit {
+  width: 100%;
+  padding: 15px 32px;
+  background: var(--coral-gradient);
+  color: var(--text-white);
+  font-size: 1.05rem;
+  font-weight: 700;
+  border-radius: var(--radius-full);
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 25px var(--coral-glow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: var(--transition-normal);
+}
+
+.btn-form-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(255, 77, 79, 0.45);
+}
+
+/* -------------------------------------------------------------------
+   Why Choose Us / Commitment Cards
+   ------------------------------------------------------------------- */
+.commitment-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 32px;
+}
+
+.commitment-card {
+  background-color: #ffffff;
+  color: #111827;
+  border-radius: var(--radius-md);
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transition: var(--transition-normal);
+}
+
+.commitment-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.commitment-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: rgba(255, 77, 79, 0.12);
+  color: var(--coral-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.commitment-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1.3;
+}
+
+.commitment-sub {
+  font-size: 0.82rem;
+  color: #6b7280;
+}
+
+/* -------------------------------------------------------------------
+   Responsive (Contact Page)
+   ------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  .contact-grid-row {
+    grid-template-columns: 1fr;
+  }
+
+  .commitment-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-hero-info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .enquiry-section-box {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-hero-info {
+    grid-template-columns: 1fr;
+  }
+
+  .commitment-grid {
+    grid-template-columns: 1fr;
+  }
+}

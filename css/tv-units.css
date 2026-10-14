@@ -1,0 +1,35 @@
+/* ===================================================================
+   TV-UNITS.CSS - TV Unit Images Page Only Styles
+   Shree Ashapura Fiber And Interior Furniture
+   Page: tv-units.html
+
+   Edit this file to change ONLY the TV Units page appearance.
+   Cards Grid, Filter Tabs and Lightbox are already in base.css.
+   =================================================================== */
+
+/* -------------------------------------------------------------------
+   TV Unit card image — slightly taller for wide living room shots
+   ------------------------------------------------------------------- */
+.tv-card .card-img-wrap {
+  height: 260px;
+}
+
+/* -------------------------------------------------------------------
+   TV Unit hero — subtle dark gradient background
+   ------------------------------------------------------------------- */
+.tv-hero-bg {
+  background: radial-gradient(
+    ellipse at 80% 40%,
+    rgba(255, 77, 79, 0.06) 0%,
+    transparent 60%
+  );
+}
+
+/* -------------------------------------------------------------------
+   Responsive (TV Units Page)
+   ------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  .feature-badges-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

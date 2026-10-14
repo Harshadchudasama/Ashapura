@@ -1,0 +1,27 @@
+/* ===================================================================
+   STYLE.CSS - DEPRECATED / NO LONGER IN USE
+   Shree Ashapura Fiber And Interior Furniture
+   ===================================================================
+
+   આ file હવે use નથી થતી.
+   CSS ને page-wise અલગ files માં move કરી દેવામાં આવ્યું છે.
+
+   CSS Folder Structure:
+   ─────────────────────────────────────────────────────────────────
+   css/base.css          → Shared (Header, Nav, Footer, Buttons, Modals)
+                           દરેક page load કરે છે
+
+   css/index.css         → Home page (index.html) ની specific styles
+   css/pvc-kitchen.css   → PVC Kitchen page (pvc-kitchen.html) ની styles
+   css/pvc-ceiling.css   → PVC Ceiling page (pvc-ceiling.html) ની styles
+   css/tv-units.css      → TV Units page (tv-units.html) ની styles
+   css/catalogues.css    → Catalogues page (catalogues.html) ની styles
+   css/contact.css       → Contact page (contact.html) ની styles
+   ─────────────────────────────────────────────────────────────────
+
+   કોઈ page ની design change કરવી હોય ત્યારે ફક્ત
+   તે page ની CSS file edit કરો.
+   
+   ઉદ: Contact page form change → css/contact.css edit કરો
+       Home page tiles change   → css/index.css edit કરો
+   =================================================================== */
